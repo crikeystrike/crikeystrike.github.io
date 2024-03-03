@@ -111,3 +111,12 @@ img {
     margin-top: 40px; /* Space between the button and the message */
     text-align: center;
   }
+
+  .buttons-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start of the container */
+}
+
+.shop-button {
+    margin-right: 10px; /* Adds some space between the buttons */
+}

@@ -13,12 +13,41 @@
 <body>
 
     <img src="ciggyshopoutside.jpg" alt="ciggyshop">
+
     <div class="container">
-        <a href="ciggy_counter.html" class="shop-button">Enter Shop</a>
+        <div class="buttons-container">
+            <a href="https://t.me/+Kba7aWRcd3xmYmVl" class="shop-button" id="joinChatButton">↖️ Join Chat</a>
+            <a href="ciggy_counter.html" class="shop-button">⬆️ Enter Shop</a>
+        </div>
         <p id="essayMessage">There is something about a late night ciggy in good company.
             </br> The searching, the finding, the first inhale, and then the banter.
             </br> You might regret it in the morning but right now it's perfect...</p>
     </div>
+    
+    <div id="chatPopup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p>The group looks at you hesitantly. "Does he even have any ciggies?" You hear one of them say, full of caution.</p>
+            <p>It is clear that you will require ciggies to join the chat.</p>
+        </br>
+            <a href="https://t.me/+Kba7aWRcd3xmYmVl">I have Ciggies, proceed to chat.</a>
+        </br>
+    </br>
+            <a href="ciggy.shop">I don't have any Ciggies, perhaps I should buy a pack.</a>
+        </div>
+    </div>
+
+<script>
+
+document.getElementById('joinChatButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    document.getElementById('chatPopup').style.display = 'flex'; // Show the popup
+});
+
+document.querySelector('.close-button').addEventListener('click', function() {
+    document.getElementById('chatPopup').style.display = 'none'; // Hide the popup
+});
+</script>
 
 </body>
 
